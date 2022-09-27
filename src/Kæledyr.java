@@ -8,14 +8,12 @@ public class Kæledyr {
         HUND,
         KAT,
         MARSVIN,
-        HEST
+        HEST,
     }
 
     public Kæledyr(String n, Dyr a){
         navn = n;
         art = a;
-
-
     }
 
     String getNavn(){

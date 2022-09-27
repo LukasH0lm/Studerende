@@ -9,8 +9,6 @@ public class Main {
 
         Kæledyr bøfBuffer = new Kæledyr("Riko", Kæledyr.Dyr.HEST);
 
-
-
         Studerende s0 = new Studerende("Hansen", 2000);
 
         s0.kæledyrsListe.add( new Kæledyr("Maren", Kæledyr.Dyr.HEST));
@@ -19,17 +17,20 @@ public class Main {
         Studerende s1 = new Studerende("Larsen", 1999);
 
         s1.kæledyrsListe.add(0, new Kæledyr("Niko", Kæledyr.Dyr.HEST));
-        s0.kæledyrNavneskift("Niko","Bellic");
-
+        s1.kæledyrNavneskift("Niko","Bellic");
         s1.kæledyrsListe.add(bøfBuffer);
+
 
         Studerende s2 = new Studerende("Nielsen", 1989);
 
         s2.kæledyrsListe.add(0, new Kæledyr("Sue", Kæledyr.Dyr.MARSVIN));
         s2.kæledyrsListe.add(1, new Kæledyr("Miv", Kæledyr.Dyr.KAT));
 
+
         Studerende s3 = new Studerende("Jansen", 1773);
+
         s3.kæledyrsListe.add(bøfBuffer);
+
 
         LinkedList<Studerende> liste = new LinkedList<Studerende>();
         liste.add(s0);
@@ -39,9 +40,6 @@ public class Main {
 
         //udskrivDyr(liste, Kæledyr.Dyr.KAT);
         udskrivStuderende(liste);
-
-
-
 
 
     }
@@ -57,9 +55,6 @@ public class Main {
 
 
      public static void udskrivDyr(LinkedList<Studerende> liste, Kæledyr.Dyr d){
-
-
-
 
             for(Studerende stud : liste) {
                 System.out.println("Studerende: " + stud.getNavn());
